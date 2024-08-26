@@ -1,1 +1,45 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen 2x2 Table</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            border-collapse: collapse;
+            table-layout: fixed; /* Ensure cells take up space evenly */
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 0; /* Remove default padding */
+            text-align: center;
+            vertical-align: middle; /* Center content vertically */
+            overflow: hidden; /* Hide overflow content */
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover; /* Ensure image covers the cell area */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><a href="https://artsci.tamu.edu/statistics/index.html">Link to TAMU Statistics Website</a></td>
+            <td><img src="mypic.jpg" alt="Placeholder Image"></td>
+        </tr>
+        <tr>
+            <td><strong>My Bio: </strong>Hi, I'm Aditya and I'm currently a first-year student in the Statistical Data Science Masters programs at Texas A&M. Before this, I was at Rice University in Houston where I majored in Economics and Cognitive Sciences.</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
